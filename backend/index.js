@@ -43,7 +43,7 @@ app.get('/oauth/google', (request, response) => {
       })
       .catch((error) => {
         console.log(error);
-        response.redirect(`${process.env.CLIENT_URL  }?error=oauth`); // we should always redirect user to their page
+        response.redirect(`${process.env.CLIENT_URL}?error=oauth`); // we should always redirect user to their page
       });
   }
   return undefined;
